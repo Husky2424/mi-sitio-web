@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="operaciones.js"></script>
 </head>
 <body>
     <h1>javascript</h1>
@@ -35,5 +36,21 @@
     <button onclick="document.getElementById('foto').src = 'dembele.jpg' ">
        dembele
     </button>
+    <h2>Funcions amb javascript</h2>
+    <input type="number" id="numero1">
+    <input type="number" id="numero2">
+    <button onclick="sumar()">sumar</button>
+    <button onclick="restar ()">restar</button>
+    <button onclick="multiplicar()">multiplicar</button>
+    <button onclick="dividir()">dividir</button>
+    <button onclick="exponer()">exponer</button>
+    <script>
+        function sumar(){
+        let valor1 = parseInt(document.getElementById('numero1').value);
+        let valor2 = parseInt(document.getElementById('numero2').value);
+        let resultado = valor1 + valor2;
+        alert("el resultado es " + resultado);
+        }
+    </script>
 </body>
 </html>
